@@ -54,18 +54,14 @@ If you use Carthage to build your dependencies, make sure you have added `EtsyCo
 
     ```swift
     extension ViewController: EtsyCompositionalLayoutBridgeDelegate { 
-        
         func compositionalLayoutBridge(_ bridge: EtsyCompositionalLayoutBridge, shouldUseFlowLayoutFor section: Int) -> Bool {
-
             ...
         }
 
         func compositionalLayoutBridge(_ bridge: EtsyCompositionalLayoutBridge, layoutSectionFor section: Int, environment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? {
             ...
         }
-
     }
-
     ```
     
     * The `EtsyCompositionalLayoutBridgeDelegate.compositionalLayoutBridge(_:shouldUseFlowLayoutFor:)`
